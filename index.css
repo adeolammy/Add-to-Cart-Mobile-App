@@ -3,6 +3,8 @@ html, body {
     padding: 0;
     font-family: 'Rubik', sans-serif;
     background-color: #EEF0F4;
+    color: #432000;
+    user-select: none;
 }
 
 .container {
@@ -15,6 +17,9 @@ html, body {
 img {
     width: 150px;
     margin: 0 auto;
+    border-radius: 100%;
+    background-color: rgb(218, 209, 209);
+    
 }
 
 input {
@@ -31,11 +36,39 @@ input {
 
 button {
     color: #FDFDFD;
-    background-color: #AC485A;
+    background-color: #271d61;
     border: 0;
     padding: 15px;
     border-radius: 8px;
     font-size: 20px;
     text-align: center;
     font-family: 'Rubik', sans-serif;
+}
+
+button:hover {
+    background-color: #331fa3;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+ul li {
+    font-size: 20px;
+    background-color: #FFFDF8;
+    padding: 15px;
+    border-radius: 8px;
+    flex-grow: 1;
+    text-align: center;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2)
+}
+
+ul li:hover {
+    background-color: #77a6d3;
+    cursor: pointer;
 }
